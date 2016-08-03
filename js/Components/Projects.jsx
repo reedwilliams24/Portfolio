@@ -1,4 +1,5 @@
 var React = require('react');
+var $ = require('jquery');
 
 var Projects = React.createClass({
   render: function(){
@@ -21,7 +22,9 @@ var Projects = React.createClass({
           <div className='project project-tall'>
             {'Minesweeper'}
             <a href="https://github.com/reedwilliams24/Minesweeper">
-              <img src='./docs/minesweeper.png'/></a>
+              <img id='minesweeper-image' src='./docs/minesweeper.png'
+                   onMouseEnter={this.mineSweeperOn}
+                   onMouseLeave={this.mineSweeperOff}/></a>
             </div>
 
           <div className='project project-wide'>
@@ -32,6 +35,16 @@ var Projects = React.createClass({
         </div>
       </div>
     );
+  },
+
+  mineSweeperOn: function(e){
+    var image = $('#minesweeper-image');
+    image.attr('src', './docs/minesweeper.gif');
+  },
+
+  mineSweeperOff: function(e){
+    var image = $('#minesweeper-image');
+    image.attr('src', './docs/minesweeper.png');
   }
 });
 
