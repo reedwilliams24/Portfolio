@@ -1,0 +1,15 @@
+body {
+  font-family: arial;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 25% 2% 25%;
+  background: cornflowerblue;
+}
+
+#navbar a {
+  color: white;
+  font-size: 20px;
+}
