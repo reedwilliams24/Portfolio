@@ -13,3 +13,28 @@ body {
   color: white;
   font-size: 20px;
 }
+
+#name {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 25% 0% 25%;
+  color: white;
+  background: red;
+  font-size: 44px;
+}
+
+#title {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 25% 2% 25%;
+  color: white;
+  background: green;
+  font-size: 28px;
+}
+
+#description {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: grey;
+}

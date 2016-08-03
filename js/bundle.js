@@ -21512,11 +21512,17 @@
 	      React.createElement(
 	        'div',
 	        { id: 'about-me' },
+	        'About Me',
+	        React.createElement('br', null),
+	        React.createElement('br', null),
 	        this.aboutMeText()
 	      ),
 	      React.createElement(
 	        'div',
 	        { id: 'skills' },
+	        'Skills and Technologies',
+	        React.createElement('br', null),
+	        React.createElement('br', null),
 	        this.skillsText()
 	      )
 	    );

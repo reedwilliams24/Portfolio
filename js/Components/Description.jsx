@@ -5,9 +5,13 @@ var Description = React.createClass({
     return (
       <div id='description'>
         <div id='about-me'>
+          About Me
+          <br/><br/>
           {this.aboutMeText()}
         </div>
         <div id='skills'>
+          Skills and Technologies
+          <br/><br/>
           {this.skillsText()}
         </div>
       </div>
