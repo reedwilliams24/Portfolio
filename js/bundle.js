@@ -49,6 +49,7 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(35);
 	var Navbar = __webpack_require__(175);
+	var Description = __webpack_require__(176);
 	
 	var App = React.createClass({
 	  displayName: 'App',
@@ -57,7 +58,18 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(Navbar, null)
+	      React.createElement(Navbar, null),
+	      React.createElement(
+	        'div',
+	        { id: 'name' },
+	        'Reed Williams'
+	      ),
+	      React.createElement(
+	        'div',
+	        { id: 'title' },
+	        'Software Developer'
+	      ),
+	      React.createElement(Description, null)
 	    );
 	  }
 	});
@@ -21481,6 +21493,47 @@
 	});
 	
 	module.exports = Navbar;
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var Description = React.createClass({
+	  displayName: 'Description',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { id: 'description' },
+	      React.createElement(
+	        'div',
+	        { id: 'about-me' },
+	        this.aboutMeText()
+	      ),
+	      React.createElement(
+	        'div',
+	        { id: 'skills' },
+	        this.skillsText()
+	      )
+	    );
+	  },
+	
+	  aboutMeText: function aboutMeText() {
+	    var text = 'about me text';
+	    return text;
+	  },
+	
+	  skillsText: function skillsText() {
+	    var text = 'skills and technologies text';
+	    return text;
+	  }
+	});
+	
+	module.exports = Description;
 
 /***/ }
 /******/ ]);
