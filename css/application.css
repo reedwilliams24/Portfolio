@@ -38,3 +38,50 @@ body {
   text-align: center;
   background: grey;
 }
+
+#project-container {
+  background: blue;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  background: yellow;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+  padding: 1%;
+  border: 1px solid black;
+  margin: 2px;
+  /*min-height: 350px;
+  max-height: 350px;*/
+}
+
+.project img {
+  padding-top: 5px;
+}
+
+.project-wide {
+  width: 65%;
+}
+
+.project-tall {
+  width: 26.5%;
+}
+
+img {
+  width: 100%;
+}

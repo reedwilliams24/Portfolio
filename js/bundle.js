@@ -50,6 +50,7 @@
 	var ReactDOM = __webpack_require__(35);
 	var Navbar = __webpack_require__(175);
 	var Description = __webpack_require__(176);
+	var Projects = __webpack_require__(177);
 	
 	var App = React.createClass({
 	  displayName: 'App',
@@ -69,7 +70,8 @@
 	        { id: 'title' },
 	        'Software Developer'
 	      ),
-	      React.createElement(Description, null)
+	      React.createElement(Description, null),
+	      React.createElement(Projects, null)
 	    );
 	  }
 	});
@@ -21540,6 +21542,72 @@
 	});
 	
 	module.exports = Description;
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var Projects = React.createClass({
+	  displayName: 'Projects',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { id: 'project-container' },
+	      'Projects',
+	      React.createElement(
+	        'div',
+	        { id: 'projects' },
+	        React.createElement(
+	          'div',
+	          { className: 'project project-wide' },
+	          '800px',
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/reedwilliams24/800px' },
+	            React.createElement('img', { src: './docs/800px.png' })
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'project project-tall' },
+	          'Bubble Popper',
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/reedwilliams24/bubblePopper' },
+	            React.createElement('img', { src: './docs/bubblePopper.png' })
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'project project-tall' },
+	          'Minesweeper',
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/reedwilliams24/Minesweeper' },
+	            React.createElement('img', { src: './docs/minesweeper.png' })
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'project project-wide' },
+	          'ActiveRecordLite',
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/reedwilliams24/ActiveRecordLite' },
+	            React.createElement('img', { src: './docs/activeRecordLite.png' })
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = Projects;
 
 /***/ }
 /******/ ]);

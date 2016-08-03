@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Navbar = require('./Components/Navbar');
 var Description = require('./Components/Description');
+var Projects = require('./Components/Projects');
 
 var App = React.createClass({
   render: function(){
@@ -11,6 +12,7 @@ var App = React.createClass({
         <div id='name'>Reed Williams</div>
         <div id='title'>Software Developer</div>
         <Description/>
+        <Projects/>
       </div>
     );
   }
