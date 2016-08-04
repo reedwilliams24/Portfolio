@@ -70,7 +70,7 @@
 	        { id: 'title' },
 	        'Software Developer'
 	      ),
-	      React.createElement('img', { id: 'backdrop', src: 'http://traveldigg.com/wp-content/uploads/2016/05/Golden-Gate-Bridge-Photo.jpg' }),
+	      React.createElement('img', { id: 'backdrop', src: './docs/backdrop.jpg' }),
 	      React.createElement(Description, null),
 	      React.createElement(Projects, null)
 	    );
