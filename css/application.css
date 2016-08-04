@@ -1,5 +1,6 @@
 body {
   font-family: arial;
+  margin: 0px;
 }
 
 #navbar {
@@ -84,11 +85,17 @@ body {
   width: 26.5%;
 }
 
-img {
+#project-container img {
   width: 100%;
   transition: 0.5s;
 }
 
-img:hover {
+#project-container img:hover {
   transform: scale(1.05);
+}
+
+#backdrop {
+  width: 100%;
+  /*height: 250px;*/
+  /*max-height: 75vh;*/
 }
