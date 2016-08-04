@@ -16,15 +16,18 @@ var Projects = React.createClass({
           <div className='project project-tall'>
             {'Bubble Popper'}
             <a href="https://github.com/reedwilliams24/bubblePopper">
-              <img src='./docs/bubblePopper.png'/></a>
+              <img id='bubblepopper-image'
+                src='./docs/bubblePopper.png'
+                onMouseEnter={this.bubblePopperOn}
+                onMouseLeave={this.bubblePopperOff}/></a>
           </div>
 
           <div className='project project-tall'>
-            {'Minesweeper'}
             <a href="https://github.com/reedwilliams24/Minesweeper">
-              <img id='minesweeper-image' src='./docs/minesweeper.png'
-                   onMouseEnter={this.mineSweeperOn}
-                   onMouseLeave={this.mineSweeperOff}/></a>
+              <img id='minesweeper-image'
+                src='./docs/minesweeper.png'
+                onMouseEnter={this.mineSweeperOn}
+                onMouseLeave={this.mineSweeperOff}/></a>
             </div>
 
           <div className='project project-wide'>
@@ -38,13 +41,31 @@ var Projects = React.createClass({
   },
 
   mineSweeperOn: function(e){
-    var image = $('#minesweeper-image');
-    image.attr('src', './docs/minesweeper.gif');
+    window.setTimeout(function(){
+      var image = $('#minesweeper-image');
+      image.attr('src', './docs/minesweeper.gif');
+    }, 600);
   },
 
   mineSweeperOff: function(e){
-    var image = $('#minesweeper-image');
-    image.attr('src', './docs/minesweeper.png');
+    window.setTimeout(function(){
+      var image = $('#minesweeper-image');
+      image.attr('src', './docs/minesweeper.png');
+    }, 600);
+  },
+
+  bubblePopperOn: function(e){
+    window.setTimeout(function(){
+      var image = $('#bubblepopper-image');
+      image.attr('src', './docs/bubblePopper.gif');
+    }, 600);
+  },
+
+  bubblePopperOff: function(e){
+    window.setTimeout(function(){
+      var image = $('#bubblepopper-image');
+      image.attr('src', './docs/bubblePopper.png');
+    }, 600);
   }
 });
 

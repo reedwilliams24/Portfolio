@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 2% 25% 2% 25%;
-  background: cornflowerblue;
+  background: #b71c1c;
 }
 
 #navbar a {
@@ -19,8 +19,9 @@ body {
   justify-content: space-around;
   padding: 2% 25% 0% 25%;
   color: white;
-  background: red;
+  background: #1976D2;
   font-size: 44px;
+  text-align: center;
 }
 
 #title {
@@ -28,8 +29,9 @@ body {
   justify-content: space-around;
   padding: 0% 25% 2% 25%;
   color: white;
-  background: green;
+  background: #1976D2;
   font-size: 28px;
+  text-align: center;
 }
 
 #description {
@@ -84,4 +86,9 @@ body {
 
 img {
   width: 100%;
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }

@@ -70,6 +70,7 @@
 	        { id: 'title' },
 	        'Software Developer'
 	      ),
+	      React.createElement('img', { src: 'http://traveldigg.com/wp-content/uploads/2016/05/Golden-Gate-Bridge-Photo.jpg' }),
 	      React.createElement(Description, null),
 	      React.createElement(Projects, null)
 	    );
@@ -21580,17 +21581,20 @@
 	          React.createElement(
 	            'a',
 	            { href: 'https://github.com/reedwilliams24/bubblePopper' },
-	            React.createElement('img', { src: './docs/bubblePopper.png' })
+	            React.createElement('img', { id: 'bubblepopper-image',
+	              src: './docs/bubblePopper.png',
+	              onMouseEnter: this.bubblePopperOn,
+	              onMouseLeave: this.bubblePopperOff })
 	          )
 	        ),
 	        React.createElement(
 	          'div',
 	          { className: 'project project-tall' },
-	          'Minesweeper',
 	          React.createElement(
 	            'a',
 	            { href: 'https://github.com/reedwilliams24/Minesweeper' },
-	            React.createElement('img', { id: 'minesweeper-image', src: './docs/minesweeper.png',
+	            React.createElement('img', { id: 'minesweeper-image',
+	              src: './docs/minesweeper.png',
 	              onMouseEnter: this.mineSweeperOn,
 	              onMouseLeave: this.mineSweeperOff })
 	          )
@@ -21610,13 +21614,31 @@
 	  },
 	
 	  mineSweeperOn: function mineSweeperOn(e) {
-	    var image = $('#minesweeper-image');
-	    image.attr('src', './docs/minesweeper.gif');
+	    window.setTimeout(function () {
+	      var image = $('#minesweeper-image');
+	      image.attr('src', './docs/minesweeper.gif');
+	    }, 600);
 	  },
 	
 	  mineSweeperOff: function mineSweeperOff(e) {
-	    var image = $('#minesweeper-image');
-	    image.attr('src', './docs/minesweeper.png');
+	    window.setTimeout(function () {
+	      var image = $('#minesweeper-image');
+	      image.attr('src', './docs/minesweeper.png');
+	    }, 600);
+	  },
+	
+	  bubblePopperOn: function bubblePopperOn(e) {
+	    window.setTimeout(function () {
+	      var image = $('#bubblepopper-image');
+	      image.attr('src', './docs/bubblePopper.gif');
+	    }, 600);
+	  },
+	
+	  bubblePopperOff: function bubblePopperOff(e) {
+	    window.setTimeout(function () {
+	      var image = $('#bubblepopper-image');
+	      image.attr('src', './docs/bubblePopper.png');
+	    }, 600);
 	  }
 	});
 	

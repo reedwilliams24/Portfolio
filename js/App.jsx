@@ -11,6 +11,7 @@ var App = React.createClass({
         <Navbar/>
         <div id='name'>Reed Williams</div>
         <div id='title'>Software Developer</div>
+        <img src='http://traveldigg.com/wp-content/uploads/2016/05/Golden-Gate-Bridge-Photo.jpg'/>
         <Description/>
         <Projects/>
       </div>
