@@ -70,7 +70,6 @@
 	        { id: 'title' },
 	        'Software Developer'
 	      ),
-	      React.createElement('img', { id: 'backdrop', src: './docs/backdrop.jpg' }),
 	      React.createElement(Description, null),
 	      React.createElement(Projects, null)
 	    );

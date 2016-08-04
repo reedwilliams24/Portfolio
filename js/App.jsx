@@ -11,7 +11,6 @@ var App = React.createClass({
         <Navbar/>
         <div id='name'>Reed Williams</div>
         <div id='title'>Software Developer</div>
-        <img id='backdrop' src='./docs/backdrop.jpg'/>
         <Description/>
         <Projects/>
       </div>
