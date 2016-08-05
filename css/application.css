@@ -45,11 +45,27 @@ body {
   padding: 1% 0% 1% 0%;
 }
 
+#about-me {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#skills {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
 #project-container {
   background: #003459;
   color: white;
   text-align: center;
   font-size: 32px;
+}
+
+#project-title {
+  padding: 10px 0px 10px 0px;
 }
 
 #projects {
@@ -94,7 +110,9 @@ body {
 }
 
 #project-container img:hover {
-  transform: scale(1.05);
+  transform: scale(1.0275);
+  /*position: relative;*/
+  /*top: 5px;*/
 }
 
 #backdrop {

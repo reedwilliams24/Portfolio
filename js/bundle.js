@@ -21559,7 +21559,11 @@
 	    return React.createElement(
 	      'div',
 	      { id: 'project-container' },
-	      'Projects',
+	      React.createElement(
+	        'div',
+	        { id: 'project-title' },
+	        'Projects'
+	      ),
 	      React.createElement(
 	        'div',
 	        { id: 'projects' },
@@ -21622,7 +21626,7 @@
 	    window.setTimeout(function () {
 	      var image = $('#minesweeper-image');
 	      image.attr('src', './docs/minesweeper.png');
-	    }, 600);
+	    }, 1200);
 	  },
 	
 	  bubblePopperOn: function bubblePopperOn(e) {
@@ -21636,7 +21640,7 @@
 	    window.setTimeout(function () {
 	      var image = $('#bubblepopper-image');
 	      image.attr('src', './docs/bubblePopper.png');
-	    }, 600);
+	    }, 1200);
 	  }
 	});
 	

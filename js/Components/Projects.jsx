@@ -5,7 +5,7 @@ var Projects = React.createClass({
   render: function(){
     return (
       <div id='project-container'>
-        Projects
+        <div id='project-title'>Projects</div>
         <div id='projects'>
           <div className='project project-wide'>
             {'800px'}
@@ -50,7 +50,7 @@ var Projects = React.createClass({
     window.setTimeout(function(){
       var image = $('#minesweeper-image');
       image.attr('src', './docs/minesweeper.png');
-    }, 600);
+    }, 1200);
   },
 
   bubblePopperOn: function(e){
@@ -64,7 +64,7 @@ var Projects = React.createClass({
     window.setTimeout(function(){
       var image = $('#bubblepopper-image');
       image.attr('src', './docs/bubblePopper.png');
-    }, 600);
+    }, 1200);
   }
 });
 
