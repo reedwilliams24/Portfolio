@@ -24,7 +24,8 @@ var Description = React.createClass({
   },
 
   skillsText: function(){
-    var text = 'skills and technologies text';
+    var text = 'JavaScript, React.js., Ruby, Ruby on Rails, jQuery' +
+               'Flux, PostgreSQL, Git, HTML, CSS';
     return text;
   }
 });
