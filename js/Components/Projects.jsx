@@ -14,7 +14,6 @@ var Projects = React.createClass({
           </div>
 
           <div className='project project-tall'>
-            {'Bubble Popper'}
             <a href="https://github.com/reedwilliams24/bubblePopper">
               <img id='bubblepopper-image'
                 src='./docs/bubblePopper.png'
