@@ -21531,12 +21531,12 @@
 	  },
 	
 	  aboutMeText: function aboutMeText() {
-	    var text = 'about me text';
+	    var text = 'About me text';
 	    return text;
 	  },
 	
 	  skillsText: function skillsText() {
-	    var text = 'skills and technologies text';
+	    var text = 'JavaScript, React.js., Ruby, Ruby on Rails, jQuery' + 'Flux, PostgreSQL, Git, HTML, CSS';
 	    return text;
 	  }
 	});
@@ -21576,7 +21576,6 @@
 	        React.createElement(
 	          'div',
 	          { className: 'project project-tall' },
-	          'Bubble Popper',
 	          React.createElement(
 	            'a',
 	            { href: 'https://github.com/reedwilliams24/bubblePopper' },
