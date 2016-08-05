@@ -19,7 +19,7 @@ var Description = React.createClass({
   },
 
   aboutMeText: function(){
-    var text = 'About me text';
+    var text = 'About Me Text';
     return text;
   },
 

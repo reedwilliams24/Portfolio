@@ -21531,7 +21531,7 @@
 	  },
 	
 	  aboutMeText: function aboutMeText() {
-	    var text = 'About me text';
+	    var text = 'About Me Text';
 	    return text;
 	  },
 	
