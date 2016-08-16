@@ -10,7 +10,7 @@ var Projects = React.createClass({
           <div className='project project-wide'>
             {'800px'}
             <a href="https://github.com/reedwilliams24/800px">
-              <img src='./docs/800px.png'/></a>
+              <img src='./docs/800px2.png'/></a>
           </div>
 
           <div className='project project-tall'>
